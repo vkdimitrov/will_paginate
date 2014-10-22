@@ -6,12 +6,12 @@ Gem::Specification.new do |s|
   s.name    = 'will_paginate'
   s.version = WillPaginate::VERSION::STRING
   
-  s.summary = "Pagination plugin for web frameworks and other apps"
-  s.description = "will_paginate provides a simple API for performing paginated queries with Active Record, DataMapper and Sequel, and includes helpers for rendering pagination links in Rails, Sinatra and Merb web apps."
+  s.summary = "Fork of mislav/will_paginate"
+  s.description = "only difference with mislav's will_paginate is that *?page=1* parameter is removed from first page, like google seo tips say"
   
-  s.authors  = ['Mislav Marohnić']
-  s.email    = 'mislav.marohnic@gmail.com'
-  s.homepage = 'https://github.com/mislav/will_paginate/wiki'
+  s.authors  = ['Vladimir Dimitrov']
+  s.email    = 'vkdimitrov@gmail.com'
+  s.homepage = 'https://github.com/vkdimitrov/will_paginate'
   s.license  = 'MIT'
   
   s.rdoc_options = ['--main', 'README.md', '--charset=UTF-8']

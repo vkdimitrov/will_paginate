@@ -112,7 +112,10 @@ module WillPaginate
 
         url_params = @base_url_params.dup
         add_current_page_param(url_params, page)
-
+        
+        if page == 1
+          url_params.delete(:page)
+        end
         @template.url_for(url_params)
       end
 
